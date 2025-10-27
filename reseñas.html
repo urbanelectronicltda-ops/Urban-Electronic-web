@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reseñas — TechStore</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__brand">
+      <a href="index.html" class="logo" aria-label="Inicio"><img src="/a/527cd8b4-388e-4135-b148-15338ecc5f76" alt="Urban Electronic LTDA" class="logo-img"></a>
+    </div>
+    <div class="header__search">
+      <input id="searchInput" type="search" placeholder="Buscar productos..." aria-label="Buscar productos" />
+      <button id="clearSearch" class="btn btn--secondary" aria-label="Limpiar búsqueda">Limpiar</button>
+    </div>
+    <nav class="header__menu" aria-label="Menú principal">
+      <button id="menuToggle" class="btn" aria-expanded="false" aria-controls="menuPanel">Menú</button>
+      <div id="menuPanel" class="menu-panel" role="menu">
+        <ul class="main-menu">
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="index.html">Catálogo</a></li>
+          <li><a href="servicio.html">Servicio al Cliente</a></li>
+          <li><a href="reseñas.html">Reseñas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="descuento.html">Descuento</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section id="reseñas" class="info-section">
+      <h2>Reseñas</h2>
+      <div class="reviews">
+        <article class="review"><strong>Laura P.</strong><span>★ ★ ★ ★ ★</span><p>Atención rápida y productos originales.</p></article>
+        <article class="review"><strong>Carlos M.</strong><span>★ ★ ★ ★ ☆</span><p>Buen precio, llegó a tiempo.</p></article>
+        <article class="review"><strong>Andrea G.</strong><span>★ ★ ★ ★ ★</span><p>Excelente asesoría, muy recomendados.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__social">
+      <span>Síguenos:</span>
+      <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+      <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+      <a href="#" aria-label="Twitter/X" class="social-link">X</a>
+      <a href="#" aria-label="YouTube" class="social-link">YouTube</a>
+    </div>
+    <div class="footer__legal">
+      <small>© 2025 TechStore. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

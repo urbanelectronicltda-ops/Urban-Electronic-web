@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Descuento — Urban Electronic LTDA</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__brand">
+      <a href="index.html" class="logo" aria-label="Inicio"><img src="/a/527cd8b4-388e-4135-b148-15338ecc5f76" alt="Urban Electronic LTDA" class="logo-img"></a>
+    </div>
+    <div class="header__search">
+      <input id="searchInput" type="search" placeholder="Buscar productos..." aria-label="Buscar productos" />
+    </div>
+    <nav class="header__menu" aria-label="Menú principal">
+      <button id="menuToggle" class="btn hamburger" aria-expanded="false" aria-controls="menuPanel"><span></span><span></span><span></span></button>
+      <div id="menuPanel" class="menu-panel" role="menu">
+        <ul class="main-menu">
+          <li><button id="menuGoTop" class="menu-action">Inicio</button></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="index.html">Catálogo</a></li>
+          <li><a href="servicio.html">Servicio al Cliente</a></li>
+          <li><a href="reseñas.html">Reseñas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="descuento.html">Descuento</a></li>
+          <li><button id="openInfoForm" class="menu-action">Solicitar información</button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section id="descuento" class="info-section">
+      <h2>Descuentos</h2>
+      <p>Ofertas especiales por tiempo limitado.</p>
+
+      <!-- Carrusel de productos en descuento -->
+      <div class="discount-slider" aria-label="Productos en descuento">
+        <button class="slider-btn prev" aria-label="Anterior">‹</button>
+        <div class="slider-viewport">
+          <div class="slider-track">
+            <article class="slide">
+              <div class="slide-media">
+                <img src="https://via.placeholder.com/960x540.png?text=Nevec%C3%B3n+ELECTROLUX+Side+By+Side" alt="Nevecón ELECTROLUX Side By Side" loading="lazy">
+              </div>
+              <div class="slide-info">
+                <div class="badge">40% Dto</div>
+                <h3 class="slide-title">Nevecón ELECTROLUX Side By Side</h3>
+                <p class="slide-model">Modelo: ELSBS423</p>
+                <p class="slide-spec">Capacidad: 423 Litros</p>
+                <div class="slide-price">
+                  <span class="price-old">$5.999.000</span>
+                  <span class="price-new">$3.599.000</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="slide">
+              <div class="slide-media">
+                <img src="https://via.placeholder.com/960x540.png?text=Lavadora+Samsung+22+Kg" alt="Lavadora Samsung 22 Kg" loading="lazy">
+              </div>
+              <div class="slide-info">
+                <div class="badge">25% Dto</div>
+                <h3 class="slide-title">Lavadora Samsung</h3>
+                <p class="slide-model">Modelo: WA22</p>
+                <p class="slide-spec">Capacidad: 22 Kg</p>
+                <div class="slide-price">
+                  <span class="price-old">$2.499.000</span>
+                  <span class="price-new">$1.874.000</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="slide">
+              <div class="slide-media">
+                <img src="https://via.placeholder.com/960x540.png?text=Televisor+LG+OLED55C3+55%E2%80%9D+4K" alt="Televisor LG OLED55C3 55” 4K" loading="lazy">
+              </div>
+              <div class="slide-info">
+                <div class="badge">30% Dto</div>
+                <h3 class="slide-title">Televisor LG</h3>
+                <p class="slide-model">Modelo: OLED55C3</p>
+                <p class="slide-spec">55” 4K</p>
+                <div class="slide-price">
+                  <span class="price-old">$6.499.000</span>
+                  <span class="price-new">$4.549.000</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="slider-btn next" aria-label="Siguiente">›</button>
+        <div class="slider-dots" aria-label="Indicadores"></div>
+      </div>
+
+      <div class="products-grid" aria-live="polite">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__social">
+      <span>Síguenos:</span>
+      <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+      <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+      <a href="#" aria-label="Twitter/X" class="social-link">X</a>
+      <a href="#" aria-label="YouTube" class="social-link">YouTube</a>
+    </div>
+    <div class="footer__legal">
+      <small> 2025 Urban Electronic LTDA. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <div id="infoModal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="infoTitle">
+      <header class="modal__header">
+        <h3 id="infoTitle">Solicitar información</h3>
+        <button id="closeInfoForm" class="btn">Cerrar</button>
+      </header>
+      <form id="infoForm" class="contact-form">
+        <input type="text" name="name" placeholder="Nombre" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="¿Qué información necesitas?" required></textarea>
+        <button class="btn btn--secondary" type="submit">Enviar solicitud</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
