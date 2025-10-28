@@ -17,20 +17,20 @@ window.PRODUCTS = [
   { id: 13, name: "Audífonos Philips", desc: "Auriculares estéreo con cable para podcasts, monitoreo de estudio y grabación de auriculares para computadora, teclado y guitarra con adaptador adicional de 0.248 in (1/4)", price: 80000, category: "audifonos", image: "/src/audifonos/Philips.png" },
   { id: 14, name: "Audífonos Zihnic", desc: "Audífonos bluetooth circumaurales, estéreo inalámbricos y cableados plegables Micro SD / TF, FM para iPhone, Samsung, iPad, computadora, PC, TV, audífonos de diadema, almohadillas suaves y livianas para un uso prolongado", price: 70000, category: "audifonos", image: "/src/audifonos/Zihnic.png" },
 
-  { id: 15, name: "Impresora Brother Work Smart 1410", desc: "Rápida y económica.", price: 549000, category: "impresoras", image: "/src/impresoras/Brother_Work_Smart_1410.png" },
-  { id: 16, name: "Impresora HP DeskJet Plus 4152", desc: "Imprime, copia y escanea.", price: 250000, category: "impresoras", image: "/src/impresoras/HP_DeskJet_Plus_4152.png" },
-  { id: 17, name: "Impresora HP LaserJet MFP", desc: "Colores vibrantes.", price: 399000, category: "impresoras", image: "/src/impresoras/HP_LaserJet_MFP.png" },
+  { id: 15, name: "Impresora Brother Work Smart 1410", desc: "Impresora inalámbrica color todo-en-uno con pantalla táctil 2,7″, dúplex automático y conexión móvil para oficina ligera.", price: 549000, category: "impresoras", image: "/src/impresoras/Brother_Work_Smart_1410.png" },
+  { id: 16, name: "Impresora HP DeskJet Plus 4152", desc: "Impresora de inyección de tinta todo en uno, impresión móvil, escáner y copia, lista para tinta instantánea, impresoras inalámbricas para el hogar y la oficina, puerto USB", price: 250000, category: "impresoras", image: "/src/impresoras/HP_DeskJet_Plus_4152.png" },
+  { id: 17, name: "Impresora HP LaserJet MFP", desc: "Impresora láser monocromática inalámbrica todo-en-uno: imprime, escanea y copia con conectividad WiFi para oficina o estudio", price: 399000, category: "impresoras", image: "/src/impresoras/HP_LaserJet_MFP.png" },
 
-  { id: 18, name: "Tablet SAMSUNG Galaxy Tab A9", desc: "Ideal para estudio y ocio.", price: 510000, category: "tablets", image: "/src/tablets/SAMSUNG_Galaxy_Tab_A9.png" },
-  { id: 19, name: "Tablet Android 14", desc: "Compacta y práctica.", price: 540000, category: "tablets", image: "/src/tablets/Tablet_Android_14.png" },
-  { id: 20, name: "Tablet Android 15", desc: "Rendimiento avanzado.", price: 370000, category: "tablets", image: "/src/tablets/Tablet_Android_15.png" },
+  { id: 18, name: "Tablet SAMSUNG Galaxy Tab A9", desc: "Tablet Android de 8.7 pulgadas, octa-core (6 nm), altavoces duales", price: 510000, category: "tablets", image: "/src/tablets/SAMSUNG_Galaxy_Tab_A9.png" },
+  { id: 19, name: "Tablet Android 14", desc: "Tablet Android 14 de 11 pulgadas 2000*1200 2K Display Tablets PC, T616 Octa-Core 2.0GHz, 18GB RAM 128GB ROM 1TB Expandible, 5+5+13MP Cámara AI, 9000mAh, 5G WiFi, con teclado, funda, 4 altavoces", price: 540000, category: "tablets", image: "/src/tablets/Tablet_Android_14.png" },
+  { id: 20, name: "Tablet Android 15", desc: "Tablet Android 15 de 10.1 pulgadas, 24 GB de RAM 128 GB ROM 2 TB Expand, procesador Octa-core, 2 años de protección, pantalla táctil HD IPS de 1280 x 800, GPS, WiFi 6, BT5.0, cámara dual", price: 370000, category: "tablets", image: "/src/tablets/Tablet_Android_15.png" },
 
-  { id: 21, name: "Laptop 2025", desc: "Para oficina y hogar.", price: 1400000, category: "computadores", image: "/src/computadores/Laptop_2025.png" },
-  { id: 22, name: "Laptop HD BrightView", desc: "Gráficos dedicados.", price: 1200000, category: "computadores", image: "/src/computadores/Laptop_BrightView.png" },
-  { id: 23, name: "Computador Todo en Uno", desc: "Diseño compacto.", price: 2199000, category: "computadores", image: "/src/computadores/Lenovo_IdeaPad_1.png" },
-  { id: 24, name: "Computador Portátil 15”", desc: "Ligero y potente.", price: 2399000, category: "computadores", image: "/src/computadores/Surface_Laptop_4.png" },
+  { id: 21, name: "Laptop 2025", desc: "Windows 11, procesador Intel Quad-Core (hasta 3.6 GHz) 16 GB DDR4 RAM 512 GB SSD, pantalla IPS FHD de 15.6 pulgadas, cuerpo de metal, batería de 5000 mAh, USB 3.2", price: 1400000, category: "computadores", image: "/src/computadores/Laptop_2025.png" },
+  { id: 22, name: "Laptop HD BrightView", desc: "HD de 14 pulgadas, Intel Celeron N4120, 16 GB de RAM, 416 GB de almacenamiento (128 GB eMMC + 288 GB de estación de acoplamiento), gráficos Intel UHD, cámara 720p, Wi-Fi", price: 1200000, category: "computadores", image: "/src/computadores/Laptop_BrightView.png" },
+  { id: 23, name: "Laptop Lenovo IdeaPad", desc: "Laptop para estudiantes, pantalla FHD de 15.6 pulgadas, procesador Intel de doble núcleo, 12 GB de RAM, SSD de 512 GB + 128 GB eMMC, 1 año de Office 365, Wi-Fi 6, cámara web", price: 1350000, category: "computadores", image: "/src/computadores/Lenovo_IdeaPad_1.png" },
+  { id: 24, name: "Surface Laptop 4", desc: "Laptop de alto rendimiento con pantalla táctil, diseño ultraportátil y batería duradera, ideal para trabajo profesional o académico.", price: 2399000, category: "computadores", image: "/src/computadores/Surface_Laptop_4.png" },
 
-  { id: 25, name: "Cargador Rápido USB-C", desc: "Carga de 30W.", price: 99000, category: "cargadores", image: "/src/cargadores/Cargador_para_iphone.png" }
+  { id: 25, name: "Cargador para iPhone", desc: "extra largo, paquete de 2 cables Lightning de 10 pies, cable de transferencia de carga para teléfono i Phone 12, cable de transferencia con enchufe USB, bloque de carga de pared", price: 80000, category: "cargadores", image: "/src/cargadores/Cargador_para_iphone.png" }
 ];
 
 // Mapas de override internos: agrega aquí las rutas de imágenes del proyecto.

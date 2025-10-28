@@ -44,7 +44,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.4px;
 }
-.logo-img { height: 32px; width: auto; display: block; }
+.logo-img { height: 40px; width: 250px; display: block; }
 
 .header__search {
   display: flex; align-items: center; gap: 10px;
@@ -235,8 +235,8 @@ body {
   overflow: hidden;
 }
 .slide-media img {
-  max-width: 94%;
-  max-height: 94%;
+  max-width: 200px;
+  max-height: auto;
   object-fit: contain;
 }
 .slide-info {
