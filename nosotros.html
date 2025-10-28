@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Catálogo — TechStore</title>
+  <title>Nosotros — TechStore</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
@@ -27,7 +27,6 @@
           <li><a href="reseñas.html">Reseñas</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="descuento.html">Descuento</a></li>
-          <li><button id="cartToggle" class="menu-action" aria-expanded="false" aria-controls="cartDrawer">Carrito <span id="cartCount" class="badge">0</span></button></li>
           <li><button id="openInfoForm" class="menu-action">Solicitar información</button></li>
         </ul>
       </div>
@@ -35,26 +34,17 @@
   </header>
 
   <main class="main">
-    <section class="products-section" id="catalogo">
-      <div class="products-header">
-        <h1>Productos</h1>
-        <p id="resultsInfo" class="results-info">Mostrando todos los productos</p>
-      </div>
-      <div class="filters-bar" aria-label="Filtros">
-        <ul class="categories">
-          <li><button class="category-btn active" data-category="todos">Todos</button></li>
-          <li><button class="category-btn" data-category="celulares">Celulares</button></li>
-          <li><button class="category-btn" data-category="audifonos">Audífonos</button></li>
-          <li><button class="category-btn" data-category="cargadores">Cargadores</button></li>
-          <li><button class="category-btn" data-category="impresoras">Impresoras</button></li>
-          <li><button class="category-btn" data-category="tablets">Tablets</button></li>
-          <li><button class="category-btn" data-category="computadores">Computadores</button></li>
-          <li><button class="category-btn" data-category="cartera">Cartera</button></li>
-          <li><button class="category-btn" data-category="relojes">Relojes</button></li>
-        </ul>
-      </div>
-      <div id="productsGrid" class="products-grid" aria-live="polite">
-        <!-- Productos generados por JavaScript -->
+    <section id="nosotros" class="info-section">
+      <h2>Nosotros</h2>
+      <div class="section-grid">
+        <div class="card-simple">
+          <h3>Misión</h3>
+          <p>Ofrecer tecnología confiable con excelente soporte y precios justos.</p>
+        </div>
+        <div class="card-simple">
+          <h3>Visión</h3>
+          <p>Ser la tienda preferida por su servicio y experiencia de compra.</p>
+        </div>
       </div>
     </section>
   </main>
@@ -68,7 +58,7 @@
       <a href="#" aria-label="YouTube" class="social-link">YouTube</a>
     </div>
     <div class="footer__legal">
-      <small>© 2025 TechStore. Todos los derechos reservados.</small>
+      <small> 2025 TechStore. Todos los derechos reservados.</small>
     </div>
   </footer>
 
@@ -85,15 +75,6 @@
         <textarea name="message" rows="4" placeholder="¿Qué información necesitas?" required></textarea>
         <button class="btn btn--secondary" type="submit">Enviar solicitud</button>
       </form>
-    </div>
-  </div>
-
-  <div id="cartDrawer" class="modal" aria-hidden="true">
-    <div class="modal__backdrop"></div>
-    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
-      <header class="modal__header"><h3 id="cartTitle">Carrito</h3><button id="closeCart" class="btn">Cerrar</button></header>
-      <div id="cartList" class="cart-list"></div>
-      <div class="cart-footer"><strong>Total: <span id="cartTotal">$0</span></strong><button id="checkoutBtn" class="btn btn--secondary">Comprar</button></div>
     </div>
   </div>
 

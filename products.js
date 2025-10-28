@@ -1,5 +1,5 @@
 window.PRODUCTS = [
-  { id: 1, name: "SAMSUNG Galaxy S22 128 GB", desc: "Las características mejoradas de la cámara de IA hacen que cada experiencia sea épica y proporcionan tomas magistrales desde diferentes ángulos y en diferentes condiciones de iluminación. ", price: 1599000, category: "celulares", image: "https://via.placeholder.com/640x400.png?text=Smartphone+Alpha" },
+  { id: 1, name: "Smartphone Alpha", desc: "Pantalla 6.5” y gran batería.", price: 1599000, category: "celulares", image: "src\celulares\SAMSUNG_Galaxy_S22.png" },
   { id: 2, name: "Smartphone Nova", desc: "Cámara triple y 128GB.", price: 1399000, category: "celulares", image: "https://via.placeholder.com/640x400.png?text=Smartphone+Nova" },
   { id: 3, name: "Smartphone Prime", desc: "Rendimiento potente.", price: 1899000, category: "celulares", image: "https://via.placeholder.com/640x400.png?text=Smartphone+Prime" },
   { id: 4, name: "Smartphone Lite", desc: "Ligero y veloz.", price: 999000, category: "celulares", image: "https://via.placeholder.com/640x400.png?text=Smartphone+Lite" },

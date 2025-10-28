@@ -13,7 +13,7 @@
 }
 
 * { box-sizing: border-box; }
-html, body { height: 100%; }
+html, body { width: 100%; min-height: 100vh; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
@@ -115,7 +115,7 @@ body {
 .btn--secondary { border-color: var(--blue-500); color: var(--blue-900); }
 
 /* Main */
-.main { padding: 24px 20px; }
+.main { min-height: 100%; }
 .products-section { max-width: 1200px; margin: 0 auto; }
 .info-section { max-width: 1200px; margin: 32px auto 0; padding: 0 20px; }
 .info-section h2 { margin: 0 0 8px; color: var(--blue-900); font-size: 1.25rem; }
@@ -273,8 +273,8 @@ body {
   background: var(--blue-muted);
   color: var(--white);
   border-radius: 999px;
-  padding: 4px 10px;
-  font-size: 0.84rem;
+  padding: 2px 8px;
+  font-size: .75rem;
   width: fit-content;
 }
 
@@ -372,4 +372,29 @@ body {
   #descuento .product-info {
     animation: none !important;
   }
+}
+
+/* Toast notifications */
+.toast-container {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: grid;
+  gap: 8px;
+  z-index: 1000;
+}
+.toast {
+  background: var(--blue-muted);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: var(--shadow);
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  max-width: min(92vw, 360px);
+  animation: toast-in 160ms ease-out;
+}
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
 }

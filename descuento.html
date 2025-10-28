@@ -27,6 +27,7 @@
           <li><a href="reseñas.html">Reseñas</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="descuento.html">Descuento</a></li>
+          <li><button id="cartToggle" class="menu-action" aria-expanded="false" aria-controls="cartDrawer">Carrito <span id="cartCount" class="badge">0</span></button></li>
           <li><button id="openInfoForm" class="menu-action">Solicitar información</button></li>
         </ul>
       </div>
@@ -45,7 +46,7 @@
           <div class="slider-track">
             <article class="slide">
               <div class="slide-media">
-                <img src="https://via.placeholder.com/960x540.png?text=Nevec%C3%B3n+ELECTROLUX+Side+By+Side" alt="Nevecón ELECTROLUX Side By Side" loading="lazy">
+                <img data-discount-id="d1" src="https://via.placeholder.com/960x540.png?text=Nevec%C3%B3n+ELECTROLUX+Side+By+Side" alt="Nevecón ELECTROLUX Side By Side" loading="lazy">
               </div>
               <div class="slide-info">
                 <div class="badge">40% Dto</div>
@@ -56,12 +57,15 @@
                   <span class="price-old">$5.999.000</span>
                   <span class="price-new">$3.599.000</span>
                 </div>
+                <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                  <button class="btn btn--secondary buy-discount" data-id="d1" data-name="Nevecón ELECTROLUX Side By Side" data-price="3599000">Comprar</button>
+                </div>
               </div>
             </article>
 
             <article class="slide">
               <div class="slide-media">
-                <img src="https://via.placeholder.com/960x540.png?text=Lavadora+Samsung+22+Kg" alt="Lavadora Samsung 22 Kg" loading="lazy">
+                <img data-discount-id="d2" src="https://via.placeholder.com/960x540.png?text=Lavadora+Samsung+22+Kg" alt="Lavadora Samsung 22 Kg" loading="lazy">
               </div>
               <div class="slide-info">
                 <div class="badge">25% Dto</div>
@@ -72,12 +76,15 @@
                   <span class="price-old">$2.499.000</span>
                   <span class="price-new">$1.874.000</span>
                 </div>
+                <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                  <button class="btn btn--secondary buy-discount" data-id="d2" data-name="Lavadora Samsung" data-price="1874000">Comprar</button>
+                </div>
               </div>
             </article>
 
             <article class="slide">
               <div class="slide-media">
-                <img src="https://via.placeholder.com/960x540.png?text=Televisor+LG+OLED55C3+55%E2%80%9D+4K" alt="Televisor LG OLED55C3 55” 4K" loading="lazy">
+                <img data-discount-id="d3" src="https://via.placeholder.com/960x540.png?text=Televisor+LG+OLED55C3+55%E2%80%9D+4K" alt="Televisor LG OLED55C3 55” 4K" loading="lazy">
               </div>
               <div class="slide-info">
                 <div class="badge">30% Dto</div>
@@ -87,6 +94,9 @@
                 <div class="slide-price">
                   <span class="price-old">$6.499.000</span>
                   <span class="price-new">$4.549.000</span>
+                </div>
+                <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                  <button class="btn btn--secondary buy-discount" data-id="d3" data-name="Televisor LG" data-price="4549000">Comprar</button>
                 </div>
               </div>
             </article>
@@ -127,6 +137,15 @@
         <textarea name="message" rows="4" placeholder="¿Qué información necesitas?" required></textarea>
         <button class="btn btn--secondary" type="submit">Enviar solicitud</button>
       </form>
+    </div>
+  </div>
+
+  <div id="cartDrawer" class="modal" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <header class="modal__header"><h3 id="cartTitle">Carrito</h3><button id="closeCart" class="btn">Cerrar</button></header>
+      <div id="cartList" class="cart-list"></div>
+      <div class="cart-footer"><strong>Total: <span id="cartTotal">$0</span></strong><button id="checkoutBtn" class="btn btn--secondary">Comprar</button></div>
     </div>
   </div>
 
