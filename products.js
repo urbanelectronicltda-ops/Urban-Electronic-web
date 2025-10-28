@@ -1,5 +1,5 @@
 window.PRODUCTS = [
-  { id: 1, name: "Apple iPhone 13 Pro Max", desc: "Potente iPhone de gama alta con pantalla 6,7″, chip A15 Bionic y cámara triple profesional.", price: 3990000, category: "celulares", image: "/src/celulares/Apple_iphone_13_pro_max.png" },
+  { id: 1, name: "Apple iPhone 13 Pro Max", desc: "Potente iPhone de gama alta con pantalla 6,7″, chip A15 Bionic y cámara triple profesional.", price: 3990000, category: "celulares", image: "src/celulares/Apple_iphone_13_pro_max.png" },
   { id: 2, name: "iPhone 11 Pro Max", desc: "Smartphone premium de generación anterior: excelente cámara, pantalla grande, ideal para quienes buscan calidad Apple sin pagar lo más nuevo.", price: 2400000, category: "celulares", image: "/src/celulares/Iphone_11_pro_max.png" },
   { id: 3, name: "Redmi Xiaomi 13C", desc: "Teléfono de gama de entrada/intermedia, ideal para uso diario: buen equilibrio entre precio y prestaciones básicas.", price: 500000, category: "celulares", image: "/src/celulares/Redmi_Xiaomi_13C.png" },
   { id: 4, name: "SAMSUNG Galaxy A15", desc: "Dispositivo de gama media de Samsung: pantalla 6,5″, buen diseño, prestaciones accesibles para tareas diarias.", price: 700000, category: "celulares", image: "/src/celulares/SAMSUNG_Galaxy_A15.png" },
