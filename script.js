@@ -6,7 +6,7 @@ const products = window.PRODUCTS || [
     desc: "Rendimiento para trabajo y estudio.",
     price: 3599000,
     category: "laptops",
-    image: "src\celulares\SAMSUNG_Galaxy_S22.png"
+    image: ""
   },
   {
     id: 2,
@@ -335,6 +335,10 @@ cartDrawer?.addEventListener("click",(e)=>{
 });
 
 document.getElementById("checkoutBtn")?.addEventListener("click",()=>{ if(!cart.length){ alert("Tu carrito está vacío."); return; } alert("Gracias por tu compra!"); cart=[]; saveCart(); renderCart(); });
+document.getElementById("btnNequi").addEventListener("click", function() {
+  document.getElementById("qrNequi").style.display = "block";
+});
+
 
 // Discount slider (descuento.html)
 (function initDiscountSlider() {

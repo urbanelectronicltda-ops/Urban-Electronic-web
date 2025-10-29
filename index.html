@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,16 +9,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="header__brand">
-      <a href="index.html" class="logo" aria-label="Inicio"><img src="img/Logo/logo.png" alt="Urban Electronic LTDA" class="logo-img"></a>
+      <a href="index.html" class="logo" aria-label="Inicio"><img src="img/Logo/logo.png" alt="Urban Electronic LTDA"
+          class="logo-img"></a>
     </div>
     <div class="header__search">
       <input id="searchInput" type="search" placeholder="Buscar productos..." aria-label="Buscar productos" />
     </div>
     <nav class="header__menu" aria-label="Menú principal">
-      <button id="menuToggle" class="btn hamburger" aria-expanded="false" aria-controls="menuPanel"><span></span><span></span><span></span></button>
+      <button id="menuToggle" class="btn hamburger" aria-expanded="false"
+        aria-controls="menuPanel"><span></span><span></span><span></span></button>
       <div id="menuPanel" class="menu-panel" role="menu">
         <ul class="main-menu">
           <li><button id="menuGoTop" class="menu-action">Inicio</button></li>
@@ -27,7 +31,8 @@
           <li><a href="reseñas.html">Reseñas</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="descuento.html">Descuento</a></li>
-          <li><button id="cartToggle" class="menu-action" aria-expanded="false" aria-controls="cartDrawer">Carrito <span id="cartCount" class="badge">0</span></button></li>
+          <li><button id="cartToggle" class="menu-action" aria-expanded="false" aria-controls="cartDrawer">Carrito <span
+                id="cartCount" class="badge">0</span></button></li>
           <li><button id="openInfoForm" class="menu-action">Solicitar información</button></li>
         </ul>
       </div>
@@ -63,8 +68,10 @@
     <div class="footer__social">
       <span>Síguenos:</span>
       <a href="https://www.facebook.com/share/17WEEoTC2p/" aria-label="Facebook" class="social-link">Facebook</a>
-      <a href="https://www.instagram.com/urbanelectronicltda_2025?igsh=cm1xczZkaHVnZXJp" aria-label="Instagram" class="social-link">Instagram</a>
-      <a href="https://www.tiktok.com/@urbanelectronic?_t=ZS-90si7rw0Krg&_r=1" aria-label="Tiktok" class="social-link">Tiktok</a>
+      <a href="https://www.instagram.com/urbanelectronicltda_2025?igsh=cm1xczZkaHVnZXJp" aria-label="Instagram"
+        class="social-link">Instagram</a>
+      <a href="https://www.tiktok.com/@urbanelectronic?_t=ZS-90si7rw0Krg&_r=1" aria-label="Tiktok"
+        class="social-link">Tiktok</a>
     </div>
     <div class="footer__legal">
       <small> 2025 Urban Electronic LTDA. Todos los derechos reservados.</small>
@@ -90,13 +97,48 @@
   <div id="cartDrawer" class="modal" aria-hidden="true">
     <div class="modal__backdrop"></div>
     <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
-      <header class="modal__header"><h3 id="cartTitle">Carrito</h3><button id="closeCart" class="btn">Cerrar</button></header>
+      <header class="modal__header">
+        <h3 id="cartTitle">Carrito</h3><button id="closeCart" class="btn">Cerrar</button>
+      </header>
       <div id="cartList" class="cart-list"></div>
-      <div class="cart-footer"><strong>Total: <span id="cartTotal">$0</span></strong><button id="checkoutBtn" class="btn btn--secondary">Comprar</button></div>
+      <div class="cart-footer"><strong>Total: <span id="cartTotal">$0</span></strong><button id="checkoutBtn"
+          class="btn btn--secondary">Comprar</button></div>
+      <div class="payment-options">
+        <h4>Otros métodos de pago</h4>
+        <button id="btnNequi">Pagar con Nequi</button>
+        <div id="qrNequi" style="display:none;">
+          <img src="https://quickchart.io/qr?text=nequi://sendmoney/3155230533" alt="QR Nequi">
+          <p>Escanea este código o envía el dinero a <b>3155230533</b></p>
+        </div>
+
+        <button onclick="window.open('https://www.pse.com.co/persona','_blank')">🏦 Pagar con PSE</button>
+      </div>
     </div>
   </div>
 
   <script src="products.js"></script>
   <script src="script.js"></script>
+  <div id="paypal-button-container"></div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=AXAb9zNicD-POIbxrclw79NMfRStaX2NEkUkRMm9J7W7_HIw037QxvFbc6JKaKtIOElkj5ED5byGPXgn&currency=USD"></script>
+<script>
+  paypal.Buttons({
+      createOrder: function(data, actions) {
+          return actions.order.create({
+              purchase_units: [{
+                  amount: { value: '500.00' } // Puedes hacerlo dinámico
+              }]
+          });
+      },
+      onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+              alert('Pago completado por ' + details.payer.name.given_name);
+          });
+      }
+  }).render('#paypal-button-container');
+</script>
+
+
 </body>
+
 </html>
